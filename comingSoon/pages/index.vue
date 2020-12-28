@@ -3,7 +3,6 @@
 
   
   <div class="container">
-    <meta name="viewport" content="user-scalable = yes">
     <div>
       
       <div class = "logo">
