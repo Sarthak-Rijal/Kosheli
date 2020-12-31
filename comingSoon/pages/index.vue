@@ -102,8 +102,9 @@ export default {}
     and (-webkit-device-pixel-ratio : 3) {
 
       .comingSoon img{
+        text-align: center;
         height: auto;
-        width: 300px;
+        width: 250px;
       }
 
 }
