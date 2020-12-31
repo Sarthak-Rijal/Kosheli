@@ -1,34 +1,6 @@
 <template>
 
-
-  
-  <div class="container">
-
-    <div>
-      
-      <div class ="logo">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">    
-        <img src="~/assets/logofinal.png" />
-        <br/>
-        <img src="~/assets/name.png" />
-        <br/>
-
-        <div class ="comingSoon">
-          <img src="~/assets/comingSoon.png" />
-        </div>
-
-      </div>
-
-        <br/>
-        <b><h5 style = "font-weight: bold">Be The First To Know</h5 style = "font-weight: bold"></b>
-        <p>Simply register to recieve our newsletters with the latest products and exclusive offers!</p>
-        <b-form-input id = "email" v-model="text" placeholder="YOUR EMAIL, PLEASE!" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required></b-form-input>
-        <br/>
-        <button type="submit" onclick="clicked(event)" class="btn btn-primary">Submit</button>
-        <br/>
-
-        <body>
-        <script  type="text/javascript">
+<script  type="text/javascript">
             function clicked(e)
             {
               var email = document.getElementById("email").value;
@@ -73,7 +45,36 @@
               }
             }
         </script>
-        </body>
+
+  
+  <div class="container">
+
+    <div>
+      
+      <div class ="logo">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">    
+        <img src="~/assets/logofinal.png" />
+        <br/>
+        <img src="~/assets/name.png" />
+        <br/>
+
+        <div class ="comingSoon">
+          <img src="~/assets/comingSoon.png" />
+        </div>
+
+      </div>
+
+        <br/>
+        <b><h5 style = "font-weight: bold">Be The First To Know</h5 style = "font-weight: bold"></b>
+        <p>Simply register to recieve our newsletters with the latest products and exclusive offers!</p>
+        <b-form-input id = "email" v-model="text" placeholder="YOUR EMAIL, PLEASE!" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required></b-form-input>
+        <br/>
+        <button type="submit" onclick="clicked(event)" class="btn btn-primary">Submit</button>
+        <br/>
+
+        
+        
+   
 
       <div class="links">
         <a
