@@ -103,7 +103,7 @@ export default {}
 
       .comingSoon img{
         height: auto;
-        width: 350px;
+        width: 300px;
       }
 
 }
