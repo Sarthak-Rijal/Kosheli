@@ -3,10 +3,11 @@
 
   
   <div class="container">
+
     <div>
       
       <div class ="logo">
-        
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">    
         <img src="~/assets/logofinal.png" />
         <br/>
         <img src="~/assets/name.png" />
@@ -96,9 +97,7 @@ export default {}
 
 
 @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3) {
+    and (min-width : 375px)  {
 
       .comingSoon img{
         text-alignn: center;
@@ -109,9 +108,7 @@ export default {}
 }
 
 @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 667px) 
-    and (-webkit-device-pixel-ratio : 2) { 
+    and (min-width: 375px)  { 
 
       .comingSoon img{
         height: auto;
@@ -120,9 +117,7 @@ export default {}
 }
 
 @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 667px) 
-    and (-webkit-device-pixel-ratio : 2) { 
+    and (min-width: 375px) { 
 
       .comingSoon img{
         height: auto;
@@ -131,9 +126,7 @@ export default {}
 }
 
 @media only screen 
-    and (device-width : 414px) 
-    and (device-height : 736px) 
-    and (-webkit-device-pixel-ratio : 3) { 
+    and (min-width: 414px)  { 
 
       .comingSoon img{
         height: auto;
