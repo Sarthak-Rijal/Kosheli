@@ -3,8 +3,7 @@
 
   
   <div class="container">
-    <meta name="viewport" content="width=device-width">
-    <div class="container-fluid">
+    <div>
       
       <div class ="logo">
         
@@ -140,8 +139,6 @@ export default {}
         height: auto;
         width: 250px;
       }
-
 }
-
 
 </style>
