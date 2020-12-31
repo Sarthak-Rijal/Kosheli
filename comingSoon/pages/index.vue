@@ -3,28 +3,28 @@
 
   
   <div class="container">
-    <div>
+    <meta name="viewport" content="width=device-width">
+    <div class="container-fluid">
       
-      <div class = "logo">
+      <div class ="logo">
         
         <img src="~/assets/logofinal.png" />
         <br/>
         <img src="~/assets/name.png" />
         <br/>
-        <img src="~/assets/comingSoon.png" />
+
+        <div class ="comingSoon">
+          <img src="~/assets/comingSoon.png" />
+        </div>
+
       </div>
-       
-        
+
         <br/>
         <b><h5 style = "font-weight: bold">Be The First To Know</h5 style = "font-weight: bold"></b>
         <p>Simply register to recieve our newsletters with the latest products and exclusive offers!</p>
         <b-form-input v-model="text" placeholder="YOUR EMAIL, PLEASE!" ></b-form-input>
         <br/>
 
-
-      
-      
-      
       <div class="links">
         <a
           href="https://vm.tiktok.com/ZMJGCq61y/"
@@ -48,8 +48,9 @@ export default {}
 <style>
 
 .logo {
-
-  top: 5%
+  top: 5%;
+  text-align: center;
+  font-family: fantasy ;
 }
 
 .container {
@@ -93,4 +94,19 @@ export default {}
   padding-top: 15px;
   justify-content: space-between;
 }
+
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
+
+      .comingSoon img{
+        height: auto;
+        width: 350px;
+      }
+
+}
+
+
 </style>
