@@ -102,7 +102,41 @@ export default {}
     and (-webkit-device-pixel-ratio : 3) {
 
       .comingSoon img{
-        text-align: center;
+        text-alignn: center;
+        height: auto;
+        width: 250px;
+      }
+
+}
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2) { 
+
+      .comingSoon img{
+        height: auto;
+        width: 250px;
+      }
+}
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2) { 
+
+      .comingSoon img{
+        height: auto;
+        width: 250px;
+      }
+}
+
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+
+      .comingSoon img{
         height: auto;
         width: 250px;
       }
