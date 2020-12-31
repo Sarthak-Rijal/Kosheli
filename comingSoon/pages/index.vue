@@ -24,6 +24,8 @@
         <p>Simply register to recieve our newsletters with the latest products and exclusive offers!</p>
         <b-form-input v-model="text" placeholder="YOUR EMAIL, PLEASE!" ></b-form-input>
         <br/>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <br/>
 
       <div class="links">
         <a
@@ -95,14 +97,20 @@ export default {}
   justify-content: space-between;
 }
 
+.comingSoon img{
+
+  padding-top: 5%;
+   
+}
+
 
 @media only screen 
     and (min-width : 375px)  {
 
       .comingSoon img{
-        text-alignn: center;
         height: auto;
         width: 250px;
+        padding-top: 5%;
       }
 
 }
@@ -113,6 +121,7 @@ export default {}
       .comingSoon img{
         height: auto;
         width: 250px;
+        padding-top: 5%;
       }
 }
 
@@ -122,6 +131,7 @@ export default {}
       .comingSoon img{
         height: auto;
         width: 250px;
+        padding-top: 5%;
       }
 }
 
@@ -131,6 +141,7 @@ export default {}
       .comingSoon img{
         height: auto;
         width: 250px;
+        padding-top: 5%;
       }
 }
 
