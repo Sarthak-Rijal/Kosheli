@@ -1,52 +1,5 @@
 <template>
 
-<script  type="text/javascript">
-            function clicked(e)
-            {
-              var email = document.getElementById("email").value;
-              if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email))
-              {
-                var url = "https://pfh-server.herokuapp.com/api/user/join";
-                var method = "POST";
-                var postData = JSON.stringify({"email":email});
-
-                var shouldBeAsync = true;
-
-                var request = new XMLHttpRequest();
-
-
-                request.onload = function () {
-
-                  // Because of javascript's fabulous closure concept, the XMLHttpRequest "request"
-                  // object declared above is available in this function even though this function
-                  // executes long after the request is sent and long after this function is
-                  // instantiated. This fact is CRUCIAL to the workings of XHR in ordinary
-                  // applications.
-
-                  // You can get all kinds of information about the HTTP response.
-                  var status = request.status; // HTTP response status, e.g., 200 for "200 OK"
-                  var data = request.responseText; // Returned data, e.g., an HTML document.
-                }
-
-                request.open(method, url, shouldBeAsync);
-
-                request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-
-
-                // Actually sends the request to the server.
-                request.send(postData);
-                console.log(postData);
-
-
-                
-              } else {
-                alert("You have entered an invalid email address!");
-                return (false);
-              }
-            }
-        </script>
-
-  
   <div class="container">
 
     <div>
@@ -73,8 +26,7 @@
         <br/>
 
         
-        
-   
+
 
       <div class="links">
         <a
