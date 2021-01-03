@@ -15,15 +15,22 @@
       </div>
 
         <br/>
-        <b><h5 style = "font-weight: bold">Follow us on our social media for the latest updates.</h5 style = "font-weight: bold"></b>
         
-
+        
+        <h5 style = "font-weight: bold">Sign up for emails for the latest news</h5 style = "font-weight: bold">
         <b-form-input id = "email" v-model="text" placeholder="YOUR EMAIL, PLEASE!" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required></b-form-input>
         <br/>
-        <button v-on:click="doStuff()" type="submit"  class="btn btn-primary">Submit</button> 
+
+        <div>
+
+          <b-button v-on:click="doStuff()" @click="modalShow = !modalShow">Submit</b-button>
+          <b-modal v-model="modalShow">Hello From Modal!</b-modal>
+
+        </div>
         <br/>
         
-
+        
+      <h5 style = "font-weight: bold">Follow us on our social media for the latest updates.</h5 style = "font-weight: bold">
       <div class="links">
         <a
           href="https://vm.tiktok.com/ZMJGCq61y/"
@@ -43,7 +50,7 @@
 <script>
   export default {
     methods: {
-      doStuff () {
+      doStuff () { 
         var email = document.getElementById("email").value;
         if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email))
         {
@@ -78,6 +85,8 @@
           request.send(postData);
           console.log(postData);
 
+          alert("Thanks you! Stay tuned for the latest news.")
+
 
           
         } else {
@@ -88,8 +97,6 @@
     }
   }
 </script>
-
-
 
 <style>
 
