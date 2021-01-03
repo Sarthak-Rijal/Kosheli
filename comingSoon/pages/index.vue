@@ -16,12 +16,13 @@
 
         <br/>
         <b><h5 style = "font-weight: bold">Follow us on our social media for the latest updates.</h5 style = "font-weight: bold"></b>
-        <!--
+        
+
         <b-form-input id = "email" v-model="text" placeholder="YOUR EMAIL, PLEASE!" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required></b-form-input>
         <br/>
-        <button type="submit" onclick="clicked(event)" class="btn btn-primary">Submit</button>
+        <button v-on:click="doStuff()" type="submit"  class="btn btn-primary">Submit</button> 
         <br/>
-        -->
+        
 
       <div class="links">
         <a
@@ -41,12 +42,11 @@
 
 <script>
   export default {
-  
-    mounted() {
-      let recaptchaScript = document.createElement('script')
-      recaptchaScript.setAttribute('src', 'https://www.google.com/recaptcha/api.js')
-      document.head.appendChild(recaptchaScript)
-    },
+    methods: {
+      doStuff () {
+        alert("Hello");
+      }
+    }
   }
 </script>
 
