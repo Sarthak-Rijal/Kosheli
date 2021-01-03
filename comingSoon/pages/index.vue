@@ -17,7 +17,9 @@
         <br/>
         
         
-        <h5 style = "font-weight: bold">Sign up for emails for the latest news</h5 style = "font-weight: bold">
+        <h5 style = "font-weight: bold">Be the first one to know!</h5>
+        <h6>Sign up for the latest newsletters and exclusive offers.</h6>
+        <br/>
         <b-form-input id = "email" v-model="text" placeholder="YOUR EMAIL, PLEASE!" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required></b-form-input>
         <br/>
 
@@ -30,7 +32,6 @@
         <br/>
         
         
-      <h5 style = "font-weight: bold">Follow us on our social media for the latest updates.</h5 style = "font-weight: bold">
       <div class="links">
         <a
           href="https://vm.tiktok.com/ZMJGCq61y/"
